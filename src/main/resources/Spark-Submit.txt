@@ -1,0 +1,14 @@
+spark-submit --master local[*] --executor-memory 2g --executor-cores 3 --num-executors 1 --driver-cores 1 --driver-memory 1g --class com.test.DataFrameExample C:\sparkjar.jar
+
+C:\Spark_Workspace\demo-spark-maven\target
+
+spark-submit --executor-memory 2g --executor-cores 3 --num-executors 1 --driver-cores 1 --driver-memory 1g --class com.spark.SparkObject C:\Users\Gaurav Bhartia\IdeaProjects\FirstMavenSparkProject\target\FirstMavenSparkProject-1.0-SNAPSHOT.jar
+
+
+
+spark-submit --class com.demo.SparkObject1 /
+C:\FirstMavenSparkProject-1.0-SNAPSHOT.jar
+
+spark-submit --master yarn-cluster --class org.training.spark.apiexamples.advanced.FoldByKey --files /home/cloudera/dvs/application.conf --conf spark.driver.extraJavaOptions=-Dconfig.file=/home/cloudera/dvs/application.conf --conf spark.executor.extraJavaOptions=-Dconfig.file=/home/cloudera/dvs/application.conf /home/cloudera/projects/spark-core/target/scala-2.10/spark-core_2.10-0.1.jar
+
+spark-submit --master local[*] --class xyz.florentforest.sparkconfigexample.ConfigWordCount --files wordcount.conf --driver-java-options -Dconfig.file=wordcount.conf sparkconfigexample-assembly-1.0.jar 
