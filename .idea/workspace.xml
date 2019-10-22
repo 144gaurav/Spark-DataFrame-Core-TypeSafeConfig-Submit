@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f22844-c439-417d-832f-9b4bcb40d356" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/orders/orders_items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders/orders_items.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/CorruptRecordDataFrame.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/DataFrameOperations.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/ExcelUtility.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/FilterDataFrameExample.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/JdbcExample.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/ReadWriteFiles.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/rdd/SparkCassandra.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/rdd/SparkCassandra.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/ComplexApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/ComplexApp.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/Settings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/Settings.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="59f22844-c439-417d-832f-9b4bcb40d356" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
