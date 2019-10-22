@@ -1,2 +1,7 @@
+*.idea
 *.class
-*.log
+.cache
+target/
+target/*
+./.settings/
+./.settings/*

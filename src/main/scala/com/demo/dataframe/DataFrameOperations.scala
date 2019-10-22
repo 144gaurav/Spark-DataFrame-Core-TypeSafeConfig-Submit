@@ -1,4 +1,4 @@
-package com.demo
+package com.demo.dataframe
 
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._

@@ -12,7 +12,5 @@ class Settings(config: Config) extends Serializable {
   val inputFile = config.getString("file.input")
   val outputFile = config.getString("file.output")
 
-  val minCount = config.getInt("minCount")
-  val stopWords = config.getStringList("stopWords").asScala
 
 }

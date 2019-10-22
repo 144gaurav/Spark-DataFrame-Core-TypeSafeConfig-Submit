@@ -1,34 +1,46 @@
-package com.demo
+package com.demo.dataframe
 
-import java.sql.Struct
-
-import org.apache.spark.sql.Row
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{BooleanType, DataType, DoubleType, IntegerType, StringType, StructField, StructType}
+import org.apache.spark.sql.types.{DoubleType, IntegerType, StructField, StructType}
+import org.apache.spark.sql.{Dataset, Row, SparkSession}
 
 object FilterDataFrameExample extends App{
 
   val spark = SparkSession.builder().master("local[*]").getOrCreate()
-  import spark.implicits._
   val newSchema = StructType(
     List(
       StructField("Order_item_id", IntegerType, true),
       StructField("order_item_order_id", IntegerType, true),
       StructField("order_item_product_id", IntegerType, true),
-      StructField("order_item_quantity", IntegerType, false),
+      StructField("order_item_quantity", IntegerType, true),
       StructField("order_item_subtotal", DoubleType, true),
       StructField("order_item_product_price", DoubleType, true)
-     // StructField("QuantityCheck", BooleanType,false)
     )
   )
-val df = spark.read.format("c" +
-  "sv")//.schema(newSchema)
+val df = spark.read.format("csv")//.schema(newSchema)
   .option("header", "false")
  // .option("inferSchema", "true")
-  .load("/home/gaurav/Sample_Data/orders_items.csv")
+  .load("src/main/resources/orders/orders_items.csv")
   //val newDf1 = df.na.drop()
   //val newDf1 = df.na.replace(df.columns,Map("" -> "0000000000"))
+val filteredDF = spark.read.format("csv").schema(newSchema).load("src/main/resources/orders/orders_items.csv")
+  filteredDF.show()
+  val Df2 = filteredDF.na.fill(0, Seq("order_item_order_id"))
+  //Df2.show(false)
 
+  val columns = Df2.dtypes
+  var filDF:Dataset[Row] = filteredDF
+  /**
+   * Removing null and replacing null with Defaults
+   */
+
+  for((colName:String,colType:String) <- columns)
+    {
+      colType match {
+        case "IntegerType" => filDF = filDF.na.fill(0, Seq(colName))
+        case "DoubleType" => filDF = filDF.na.fill(0.0, Seq(colName))
+      }
+    }
+  filDF.show(false)
 //  val map = Map("comment" -> "a", "blank" -> "a2")
 //
 //  df.na.fill(map).show()

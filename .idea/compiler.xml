@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="FirstMavenSparkProject" />
         <module name="myApp" />
+        <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
       </profile>
     </annotationProcessing>
   </component>

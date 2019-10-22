@@ -1,11 +1,10 @@
-package com.demo
-
+package com.demo.dataframe
 import java.io.InputStream
-import java.lang.reflect.Modifier
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+
 
 object CorruptRecordDataFrame extends App {
   /**
@@ -17,10 +16,8 @@ object CorruptRecordDataFrame extends App {
   val spark = SparkSession.builder()
     .master("local")
     .getOrCreate()
-  //spark.conf.set("spark.sql.avro.compression.codec", "snappy")
-
-
   import spark.implicits._
+  //spark.conf.set("spark.sql.avro.compression.codec", "snappy")
 
   /**
    * Corrupt Report Handling from Struct

@@ -1,19 +1,12 @@
-package com.demo
+package com.demo.dataframe
 
-import java.io.FileInputStream
 import java.sql.Date
 import java.util.Properties
 
-import org.apache.spark.sql.Row
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{BooleanType, DataType, DoubleType, IntegerType, LongType, StringType, StructField, StructType}
-import com.crealytics.spark.excel
-import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
-import java.util.Properties
-
-import org.apache.spark.sql.expressions._
-import sun.awt.AWTAccessor.WindowAccessor
+import org.apache.spark.sql.types.{IntegerType, LongType, StructField, StructType}
+import org.apache.spark.sql.{Row, SparkSession}
 
 object JdbcExample extends App {
 

@@ -1,13 +1,11 @@
-package com.demo
+package com.demo.dataframe
 
 import java.io.FileInputStream
 import java.util.Properties
-import org.apache.spark.sql.Row
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.types.{BooleanType, DataType, DoubleType, IntegerType, StringType, StructField, StructType}
-import com.crealytics.spark.excel
-import org.apache.spark.sql.{DataFrame}
-import org.apache.spark.sql.functions._
+
+import org.apache.spark.sql.functions.{round, when}
+import org.apache.spark.sql.types.{DoubleType, IntegerType, StructField, StructType}
+import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 
 object ExcelUtility extends App {
 

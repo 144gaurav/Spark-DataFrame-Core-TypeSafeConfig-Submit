@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59f22844-c439-417d-832f-9b4bcb40d356" name="Default Changelist" comment="" />
+    <list default="true" id="59f22844-c439-417d-832f-9b4bcb40d356" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/orders/orders_items.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/orders/orders_items.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/CorruptRecordDataFrame.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/DataFrameOperations.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/ExcelUtility.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/FilterDataFrameExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/JdbcExample.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/ReadWriteFiles.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/rdd/SparkCassandra.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/rdd/SparkCassandra.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/ComplexApp.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/ComplexApp.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/Settings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/demo/typesafe/Settings.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +57,8 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="F:/GitHubProject" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -67,7 +85,7 @@
   <component name="RunManager" selected="Application.ComplexApp">
     <configuration name="ComplexApp" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.typesafe.ComplexApp" />
-      <module name="FirstMavenSparkProject" />
+      <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.demo.typesafe.*" />
@@ -78,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoSparkFrame" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.DemoSparkFrame" />
-      <module name="FirstMavenSparkProject" />
+    <configuration name="CorruptRecordDataFrame" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.dataframe.CorruptRecordDataFrame" />
+      <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.demo.dataframe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkObject1" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.SparkObject1" />
-      <module name="FirstMavenSparkProject" />
+    <configuration name="FilterDataFrameExample" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.dataframe.FilterDataFrameExample" />
+      <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.demo.dataframe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +122,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SparkOject" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo.SparkObject" />
-      <module name="FirstMavenSparkProject" />
+    <configuration name="SparkCassandra" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.rdd.SparkCassandra" />
+      <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demo.*" />
+          <option name="PATTERN" value="com.demo.rdd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="afa" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.demo.typesafe.afa" />
+      <module name="Spark-DataFrame-Core-TypeSafeConfig-Submit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.typesafe.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,9 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ComplexApp" />
-        <item itemvalue="Application.SparkObject1" />
-        <item itemvalue="Application.DemoSparkFrame" />
-        <item itemvalue="Application.SparkOject" />
+        <item itemvalue="Application.FilterDataFrameExample" />
+        <item itemvalue="Application.CorruptRecordDataFrame" />
+        <item itemvalue="Application.SparkCassandra" />
+        <item itemvalue="Application.afa" />
       </list>
     </recent_temporary>
   </component>
