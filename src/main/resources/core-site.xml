@@ -1,0 +1,39 @@
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>abfs://images@awrgstudxxgb2.blob.core.windows.net</value>
+    </property>
+<property>
+    <name>fs.azure.account.auth.type</name>
+    <value>OAuth</value>
+</property>
+<property>
+<name>fs.azure.account.oauth.provider.type</name>
+<value>org.apache.hadoop.fs.azurebfs.oauth2.ClientCredsTokenProvider</value>
+</property>
+<property>
+<name>fs.azure.account.oauth2.client.endpoint</name>
+<value>https://login.microsoftonline.com/a6dd8cf8-d14c-437c-b5db-aac5b8f2adc6/oauth2/token</value>
+</property>
+    <property>
+        <name>fs.adl.oauth2.refresh.url</name>
+        <value>https://login.microsoftonline.com/a6dd8cf8-d14c-437c-b5db-aac5b8f2adc6/oauth2/token</value>
+    </property>
+<property>
+<name>fs.azure.account.oauth2.client.id</name>
+<value>468bf6e3-9db8-4b04-8900-ff1f1d6c4370</value>
+</property>
+<property>
+<name>fs.azure.account.oauth2.client.secret</name>
+<value>H.5ELu~luvK0rP4g3wNgqN-kGvi.4N6RX-</value>
+</property>
+    <property>
+        <name>fs.abfs.impl</name>
+        <value>org.apache.hadoop.fs.azurebfs.AzureBlobFileSystem</value>
+    </property>
+<property>
+<name>fs.AbstractFileSystem.abfs.impl</name>
+<value>org.apache.hadoop.fs.azurebfs.Abfs</value>
+</property>
+
+</configuration>
